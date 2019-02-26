@@ -1,7 +1,8 @@
 <template>
   <div>
-    <TextField></TextField>
-    <SubmitButton></SubmitButton>
+    <!--<TextField></TextField>
+    <SubmitButton></SubmitButton>-->
+    <Clock location="TOKYO" :diff="0"/>
   </div>
 </template>
 
@@ -18,13 +19,13 @@
 
 <script>
 import Vue from "vue";
-//import Clock from "./components/Clock.vue"
+import Clock from "./components/Clock.vue"
 import TextField from "./components/TextField.vue";
 import SubmitButton from "./components/SubmitButton.vue";
 
 export default {
   components: {
-    //Clock,
+    Clock,
     TextField,
     SubmitButton,
   },
@@ -34,7 +35,7 @@ export default {
 <style scoped>
 .clock {
   width: 80%;
-  max-width: 500px;
+  max-width: 300rem;
   margin: 30px auto;
 }
 </style>
@@ -47,8 +48,5 @@ html {
 body {
   margin: 0;
 }
- 
-p {
-  margin: 0;
-}
+
 </style>
