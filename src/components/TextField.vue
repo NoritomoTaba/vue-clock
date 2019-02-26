@@ -22,6 +22,7 @@ export default {
 <style scoped>
 .TextField {
   min-width: 15rem;
+  text-transform: uppercase;
   border: 2rem border #444444;
   margin-right: 1rem;
   padding: 1rem .5rem 1rem;

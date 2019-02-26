@@ -1,20 +1,19 @@
 <template>
   <div>
+    <SearchForm></SearchForm>
     <Clock location="TOKYO" :diff="0"/>
   </div>
 </template>
 
 <script>
 import Vue from "vue";
-import Clock from "./components/Clock.vue"
-import TextField from "./components/TextField.vue";
-import SubmitButton from "./components/SubmitButton.vue";
+import Clock from "./components/Clock.vue";
+import SearchForm from "./components/SearchForm.vue";
 
 export default {
   components: {
     Clock,
-    TextField,
-    SubmitButton,
+    SearchForm,
   },
 }
 </script>

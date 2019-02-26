@@ -29,11 +29,16 @@ export default {
 .SubmitButton {
   min-width: 8rem;
   border-radius: 30rem;
-  background-color: #444444;
-  color: #AAAAAA;
+  background-color: #FFD700;
+  border: none;
+  color: #444444;
   padding: 1rem 2rem;
   font-weight: bold;
   font-size: 1.5rem;
   display: inline-block;
+  cursor: pointer;
+}
+.SubmitButton:hover {
+  background-color: #DDDDDD;
 }
 </style>

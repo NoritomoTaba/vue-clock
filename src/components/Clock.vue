@@ -64,10 +64,6 @@ export default {
   font-family:'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 }
 
-.detail {
-  display: flex;
-}
-
 .location {
   color: #DDDDDD;
   font-size: 6rem;
@@ -81,10 +77,9 @@ export default {
 .date {
   color: #DDDDDD;
   font-size: 3rem;
-  vertical-align: bottom;
   padding-bottom: 0rem;
   margin-right: auto;
-  margin-top: 4rem;
+  margin-top: 0rem;
   margin-bottom: .5rem;
   text-align: center;
 }
