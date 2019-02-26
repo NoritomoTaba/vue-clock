@@ -61,7 +61,7 @@ export default {
 
 <style scoped>
 .container {
-    font-family:'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-family:'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 }
 
 .detail {
@@ -72,8 +72,9 @@ export default {
   color: #DDDDDD;
   font-size: 6rem;
   padding: 1rem;
+  margin-left: auto;
   margin-top: .5rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0rem;
   text-align: center;
 }
 
@@ -81,7 +82,8 @@ export default {
   color: #DDDDDD;
   font-size: 3rem;
   vertical-align: bottom;
-  padding-bottom: 1rem;
+  padding-bottom: 0rem;
+  margin-right: auto;
   margin-top: 4rem;
   margin-bottom: .5rem;
   text-align: center;
@@ -92,14 +94,19 @@ export default {
 }
 .time-item {
   font-size: 10rem;
-  margin-top: .5rem;
+  margin-top: 0rem;
   margin-bottom: .5rem;
   color: #DDDDDD;
 }
-.time hours {
+.hours {
+  margin-left: auto;
   margin-right: 1rem;
 }
-.time minutes {
+.minutes {
   margin-right: 1rem;
+}
+.seconds {
+  margin-right: auto;
 }
 </style>
+
