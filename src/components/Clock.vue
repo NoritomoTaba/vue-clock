@@ -1,11 +1,13 @@
 <template>
   <div>
     <div class="container">
-      <p class="location">{{ location }}</p> 
-      <p class="date">{{ year }}/{{ month }}/{{ day }}</p>
+      <div class="detail">
+        <p class="location">{{ location }}</p> 
+        <p class="date">{{ year }}/{{ month }}/{{ day }}</p>
+      </div>
       <div class="time">
-        <p class="time-item hours">{{ hours }}</p>
-        <p class="time-item minutes">{{ minutes }}</p>
+        <p class="time-item hours">{{ hours }}:</p>
+        <p class="time-item minutes">{{ minutes }}:</p>
         <p class="time-item seconds">{{ seconds }}</p>
       </div>
     </div>
@@ -58,4 +60,46 @@ export default {
 </script>
 
 <style scoped>
+.container {
+    font-family:'Lato', 'Noto Sans JP', '游ゴシック Medium', '游ゴシック体', 'Yu Gothic Medium', YuGothic, 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+
+.detail {
+  display: flex;
+}
+
+.location {
+  color: #DDDDDD;
+  font-size: 6rem;
+  padding: 1rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  text-align: center;
+}
+
+.date {
+  color: #DDDDDD;
+  font-size: 3rem;
+  vertical-align: bottom;
+  padding-bottom: 1rem;
+  margin-top: 4rem;
+  margin-bottom: .5rem;
+  text-align: center;
+}
+
+.time {
+  display: flex;
+}
+.time-item {
+  font-size: 10rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  color: #DDDDDD;
+}
+.time hours {
+  margin-right: 1rem;
+}
+.time minutes {
+  margin-right: 1rem;
+}
 </style>
