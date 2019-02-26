@@ -1,27 +1,32 @@
 <template>
   <div>
     <TextField></TextField>
-    <Clock location="TOKYO" :diff="0"/>
+    <SubmitButton></SubmitButton>
   </div>
 </template>
 
-<!--    <Clock class="clock" location="NY" :diff="-14"/>
+<!--
+    <Clock location="TOKYO" :diff="0"/>
+    <Clock class="clock" location="NY" :diff="-14"/>
     <Clock class="clock" location="LA" :diff="-17"/>
     <Clock class="clock" location="UK" :diff="-9"/>
     <Clock class="clock" location="BRAZIL" :diff="-12"/>
     <Clock class="clock" location="SYDNEY" :diff="1"/>
     <Clock class="clock" location="DUBAI" :diff="-5"/>
-    <Clock class="clock" location="JOHANNESBURG" :diff="-7"/> -->
+    <Clock class="clock" location="JOHANNESBURG" :diff="-7"/>
+-->
 
 <script>
 import Vue from "vue";
-import Clock from "./components/Clock.vue"
-import TextField from "./components/TextField.vue"
+//import Clock from "./components/Clock.vue"
+import TextField from "./components/TextField.vue";
+import SubmitButton from "./components/SubmitButton.vue";
 
 export default {
   components: {
-    Clock,
+    //Clock,
     TextField,
+    SubmitButton,
   },
 }
 </script>
