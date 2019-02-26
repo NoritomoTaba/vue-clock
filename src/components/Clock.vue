@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="clock">
     <div class="container">
       <p class="location">{{ location }}</p> 
       <p class="date">{{ year }}/{{ month }}/{{ day }}</p>
