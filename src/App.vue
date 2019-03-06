@@ -1,21 +1,29 @@
 <template>
-  <div>
-    <SearchForm></SearchForm>
-    <Clock location="TOKYO" :diff="0"/>
-  </div>
+<div>
+  <input v-model="location"></input>
+  <Clock :location="location" diff="0"></Clock>
+</div>
 </template>
 
 <script>
 import Vue from "vue";
+//import SearchForm from "./components/SearchForm.vue";
+import Print from "./components/Print.vue";
 import Clock from "./components/Clock.vue";
-import SearchForm from "./components/SearchForm.vue";
 
-export default {
-  components: {
-    Clock,
-    SearchForm,
+export default Vue.extend({
+  props: {
+    location: {
+      type: String,
+      default: "TOKYO",
+    },
   },
-}
+  components: {
+    Print,
+    Clock,
+ //   SearchForm,
+  },
+});
 </script>
 
 <style scoped>

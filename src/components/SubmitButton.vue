@@ -3,26 +3,21 @@
     type="submit"
     class="SubmitButton"
     v-on:click="onClick"
-  >{{ text }}
+  >Search
   </button>
 </template>
 
 <script>
 import Vue from "vue";
 
-export default {
-  props: {
-    text: {
-      type: String,
-      default: "Search",
-    },
-  },
+export default Vue.extend({
+  name: "SubmitButton",
   methods: {
     onClick() {
       this.$emit("click");
     },
   },
-};
+});
 </script>
 
 <style scoped>

@@ -18,8 +18,10 @@
 const zeroPadding = (num, digit) => {
   return (Array(digit).join("0") + num).slice(-digit)
 }
+import Vue from "vue";
 
-export default {
+export default Vue.extend({
+  name: "Clock",
   props: ["location", "diff"],
   data() {
     return {
@@ -56,7 +58,7 @@ export default {
       this.date.setHours(this.date.getHours() + this.diff)
     },
   },
-}
+});
 </script>
 
 <style scoped>

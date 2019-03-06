@@ -1,26 +1,27 @@
 <template>
-  <input
-    type="text"
-    class="TextField"
-    :value="value"
-    v-on:input="onInput"
-  />
+  <div class="TextField">
+    <input
+      type="text"
+      v-model="text"
+    />
+  </div>
 </template>
 
 <script>
 import Vue from "vue";
 
-export default {
+export default Vue.extend({
+  name: "TextField",
   props: {
-    value: {
+    text: {
       type: String,
     },
   },
-};
+});
 </script>
 
 <style scoped>
-.TextField {
+.TextField input {
   min-width: 15rem;
   text-transform: uppercase;
   border: 2rem border #444444;
