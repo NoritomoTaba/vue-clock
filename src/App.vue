@@ -1,6 +1,7 @@
 <template>
 <div>
-  <input v-model="location"></input>
+  <!--<input v-model="location"></input>-->
+  <TextField v-model="location"/>
   <Clock :location="location" diff="0"></Clock>
 </div>
 </template>
@@ -8,6 +9,7 @@
 <script>
 import Vue from "vue";
 //import SearchForm from "./components/SearchForm.vue";
+import TextField from "./components/TextField.vue";
 import Print from "./components/Print.vue";
 import Clock from "./components/Clock.vue";
 
@@ -15,13 +17,18 @@ export default Vue.extend({
   props: {
     location: {
       type: String,
-      default: "TOKYO",
     },
   },
   components: {
     Print,
     Clock,
+    TextField,
  //   SearchForm,
+  },
+  methods: {
+    onInput() {
+      return location = el.value;
+    },
   },
 });
 </script>

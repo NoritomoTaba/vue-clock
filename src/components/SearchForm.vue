@@ -1,7 +1,6 @@
 <template>
   <div class="SearchForm">
     <TextField
-    placeholder="都市名を入力してください"
     v-model="text"></TextField>
     <SubmitButton v-on:click="onClick"></SubmitButton>
   </div>
@@ -25,7 +24,7 @@ export default Vue.extend({
   },
   methods: {
     onClick() {
-      this.$emit("click", this.text);
+      this.$emit("click", text);
     },
   },
 });

@@ -1,10 +1,10 @@
 <template>
-  <div class="TextField">
     <input
       type="text"
-      v-model="text"
+      placeholder="hogehoge"
+      class="TextField"
+      v-on:input="onInput"
     />
-  </div>
 </template>
 
 <script>
@@ -12,9 +12,9 @@ import Vue from "vue";
 
 export default Vue.extend({
   name: "TextField",
-  props: {
-    text: {
-      type: String,
+  methods: {
+    onInput() {
+      this.$emit("input",value);
     },
   },
 });
