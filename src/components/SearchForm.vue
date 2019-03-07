@@ -1,7 +1,6 @@
 <template>
   <div class="SearchForm">
-    <TextField
-    v-model="text"></TextField>
+    <TextField v-on:input="onInput"/>
     <SubmitButton v-on:click="onClick"></SubmitButton>
   </div>
 </template>
@@ -23,6 +22,10 @@ export default Vue.extend({
     },
   },
   methods: {
+    onInput() {
+      this.text = el.value;
+      this.$emit("input", text);
+    },
     onClick() {
       this.$emit("click", text);
     },

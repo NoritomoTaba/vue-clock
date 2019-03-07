@@ -1,10 +1,12 @@
 <template>
+  <div class="TextField">
     <input
       type="text"
-      placeholder="hogehoge"
-      class="TextField"
+      v-bind:text="text"
       v-on:input="onInput"
+      placeholder="都市名を入力してください"
     />
+  </div>
 </template>
 
 <script>
@@ -12,16 +14,21 @@ import Vue from "vue";
 
 export default Vue.extend({
   name: "TextField",
+  props: {
+    text: {
+      type: String,
+    },
+  },
   methods: {
     onInput() {
-      this.$emit("input",value);
+      this.$emit("input",text);
     },
   },
 });
 </script>
 
 <style scoped>
-.TextField input {
+.TextField input{
   min-width: 15rem;
   text-transform: uppercase;
   border: 2rem border #444444;
